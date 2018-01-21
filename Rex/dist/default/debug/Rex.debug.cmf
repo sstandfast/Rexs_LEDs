@@ -1,0 +1,1034 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Kelly\AppData\Local\Temp\sjd4.obj
+idloc IDLOC 0 200000 200000 10 1
+init CODE 0 1A 1A 4 1
+reset_vec CODE 0 0 0 6 1
+config CONFIG 0 300000 300000 A 1
+$dist/default/debug\Rex.debug.obj
+ivt0x8 CODE 0 8 8 12 1
+cinit CODE 0 295A 295A 1A 1
+text0 CODE 0 1614 1614 3C6 1
+text1 CODE 0 26FC 26FC 7C 1
+text2 CODE 0 102E 102E 5E6 1
+text3 CODE 0 1D5A 1D5A 216 1
+text4 CODE 0 19DA 19DA 380 1
+text5 CODE 0 28D0 28D0 26 1
+text6 CODE 0 29CE 29CE 6 1
+text7 CODE 0 28F6 28F6 22 1
+text8 CODE 0 2778 2778 6C 1
+text9 CODE 0 2214 2214 12C 1
+nvCOMRAM COMRAM 1 2E 2E 2 1
+text10 CODE 0 2340 2340 10E 1
+text11 CODE 0 27E4 27E4 6C 1
+text12 CODE 0 29D4 29D4 6 1
+text13 CODE 0 29DA 29DA 6 1
+text14 CODE 0 20C6 20C6 14E 1
+text15 CODE 0 1F70 1F70 156 1
+text16 CODE 0 2508 2508 B4 1
+text17 CODE 0 2974 2974 1A 1
+text18 CODE 0 298E 298E 12 1
+text19 CODE 0 28A2 28A2 2E 1
+text20 CODE 0 29B2 29B2 E 1
+text21 CODE 0 266C 266C 90 1
+text22 CODE 0 293A 293A 20 1
+text23 CODE 0 29E0 29E0 6 1
+text24 CODE 0 2850 2850 52 1
+text25 CODE 0 25BC 25BC B0 1
+text26 CODE 0 244E 244E BA 1
+text27 CODE 0 29A0 29A0 12 1
+text28 CODE 0 2918 2918 22 1
+text29 CODE 0 29C0 29C0 E 1
+text30 CODE 0 29E6 29E6 2 1
+cstackCOMRAM COMRAM 1 1 1 29 1
+cstackBANK0 BANK0 1 60 60 74 1
+smallconst SMALLCONST 0 1000 1000 2E 1
+bssCOMRAM COMRAM 1 2A 2A 4 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM D4-FFF 1
+SFR 3800-3FFF 1
+BANK0 D4-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 6-7 1
+CONST 1E-FFF 1
+CONST 29E8-FFFF 1
+STACK D4-FFF 1
+SMALLCONST 29E8-FFFF 1
+CODE 6-7 1
+CODE 1E-FFF 1
+CODE 29E8-FFFF 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-FFF 1
+BIGRAM 30-5F 1
+BIGRAM D4-FFF 1
+COMRAM 30-5F 1
+EEDATA 310000-3103FF 1
+MEDIUMCONST 29E8-FFFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug\Rex.debug.obj
+29E6 text30 CODE >137:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+29E6 text30 CODE >140:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+29C0 text29 CODE >35:C:\Users\Kelly\Documents\Shawn\Rex\stop_watch.c
+29C0 text29 CODE >37:C:\Users\Kelly\Documents\Shawn\Rex\stop_watch.c
+29CC text29 CODE >38:C:\Users\Kelly\Documents\Shawn\Rex\stop_watch.c
+2918 text28 CODE >120:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+2918 text28 CODE >123:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+291C text28 CODE >124:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+2924 text28 CODE >126:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+29A0 text27 CODE >57:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/interrupt_manager.c
+29A0 text27 CODE >60:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/interrupt_manager.c
+29AC text27 CODE >62:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/interrupt_manager.c
+29B0 text27 CODE >64:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/interrupt_manager.c
+244E text26 CODE >41:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+244E text26 CODE >45:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+245A text26 CODE >46:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2466 text26 CODE >47:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2472 text26 CODE >48:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+247E text26 CODE >50:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2484 text26 CODE >51:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+248A text26 CODE >53:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+249A text26 CODE >54:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+249E text26 CODE >57:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+24A2 text26 CODE >58:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+24A6 text26 CODE >60:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+24CC text26 CODE >61:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+24F2 text26 CODE >63:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+25BC text25 CODE >12:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+25BC text25 CODE >16:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+25C8 text25 CODE >17:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+25D4 text25 CODE >18:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+25E0 text25 CODE >19:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+25EC text25 CODE >21:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+25F2 text25 CODE >22:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+25F8 text25 CODE >24:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2608 text25 CODE >25:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+260C text25 CODE >28:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2610 text25 CODE >29:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2614 text25 CODE >31:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2656 text25 CODE >33:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2850 text24 CODE >319:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2850 text24 CODE >323:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+285C text24 CODE >324:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2868 text24 CODE >325:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+286E text24 CODE >326:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2874 text24 CODE >328:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2878 text24 CODE >329:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+287C text24 CODE >330:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+288C text24 CODE >332:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+29E0 text23 CODE >51:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/interrupt_manager.c
+29E0 text23 CODE >54:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/interrupt_manager.c
+29E4 text23 CODE >55:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/interrupt_manager.c
+293A text22 CODE >109:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/mcc.c
+293A text22 CODE >112:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/mcc.c
+2940 text22 CODE >114:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/mcc.c
+2946 text22 CODE >116:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/mcc.c
+294C text22 CODE >118:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/mcc.c
+2952 text22 CODE >120:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/mcc.c
+2958 text22 CODE >121:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/mcc.c
+266C text21 CODE >52:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+266C text21 CODE >57:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+2672 text21 CODE >58:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+2676 text21 CODE >59:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+267C text21 CODE >60:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+2680 text21 CODE >61:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+2684 text21 CODE >66:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+268A text21 CODE >67:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+268E text21 CODE >68:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+2694 text21 CODE >69:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+269A text21 CODE >70:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+26A0 text21 CODE >75:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+26A6 text21 CODE >76:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+26AC text21 CODE >77:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+26B2 text21 CODE >78:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+26B8 text21 CODE >79:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+26BE text21 CODE >84:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+26C4 text21 CODE >85:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+26CA text21 CODE >86:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+26D0 text21 CODE >87:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+26D6 text21 CODE >88:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+26DC text21 CODE >93:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+26E2 text21 CODE >94:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+26E8 text21 CODE >95:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+26EE text21 CODE >96:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+26F4 text21 CODE >97:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+26FA text21 CODE >103:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+29B2 text20 CODE >133:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+29B2 text20 CODE >134:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+29BE text20 CODE >135:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+28A2 text19 CODE >60:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+28A2 text19 CODE >65:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+28A8 text19 CODE >68:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+28AE text19 CODE >71:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+28B4 text19 CODE >74:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+28B8 text19 CODE >77:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+28BC text19 CODE >80:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+28C8 text19 CODE >83:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+28CE text19 CODE >84:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+298E text18 CODE >101:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/mcc.c
+298E text18 CODE >103:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/mcc.c
+2992 text18 CODE >104:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/mcc.c
+2996 text18 CODE >105:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/mcc.c
+299A text18 CODE >106:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/mcc.c
+299E text18 CODE >107:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/mcc.c
+2974 text17 CODE >30:C:\Users\Kelly\Documents\Shawn\Rex\stop_watch.c
+2974 text17 CODE >32:C:\Users\Kelly\Documents\Shawn\Rex\stop_watch.c
+298C text17 CODE >33:C:\Users\Kelly\Documents\Shawn\Rex\stop_watch.c
+2508 text16 CODE >143:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2508 text16 CODE >145:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+251A text16 CODE >147:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+252A text16 CODE >148:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2572 text16 CODE >149:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1F70 text15 CODE >71:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1F70 text15 CODE >73:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1F82 text15 CODE >74:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1F92 text15 CODE >76:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1FFE text15 CODE >77:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+200E text15 CODE >78:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+201E text15 CODE >79:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+202E text15 CODE >81:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+207C text15 CODE >82:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+20C4 text15 CODE >84:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+20C6 text14 CODE >336:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+20C6 text14 CODE >338:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2132 text14 CODE >339:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2142 text14 CODE >340:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2152 text14 CODE >342:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2156 text14 CODE >344:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+215C text14 CODE >345:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+215C text14 CODE >346:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2160 text14 CODE >344:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2176 text14 CODE >349:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+219C text14 CODE >351:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+21C4 text14 CODE >352:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2212 text14 CODE >353:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+29DA text13 CODE >86:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+29DA text13 CODE >89:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+29DE text13 CODE >90:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+29D4 text12 CODE >26:C:\Users\Kelly\Documents\Shawn\Rex\stop_watch.c
+29D4 text12 CODE >28:C:\Users\Kelly\Documents\Shawn\Rex\stop_watch.c
+29D8 text12 CODE >29:C:\Users\Kelly\Documents\Shawn\Rex\stop_watch.c
+27E4 text11 CODE >196:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+27E4 text11 CODE >198:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+27F6 text11 CODE >200:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2806 text11 CODE >201:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2340 text10 CODE >156:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2340 text10 CODE >158:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2352 text10 CODE >159:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2362 text10 CODE >161:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+23CE text10 CODE >162:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+23DE text10 CODE >163:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+23EE text10 CODE >164:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+23FE text10 CODE >165:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+244C text10 CODE >166:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2214 text9 CODE >171:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2214 text9 CODE >174:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2224 text9 CODE >176:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2234 text9 CODE >177:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2244 text9 CODE >185:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2256 text9 CODE >186:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2266 text9 CODE >188:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+22C6 text9 CODE >189:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+22D6 text9 CODE >190:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+22E6 text9 CODE >191:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+22F6 text9 CODE >192:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+233E text9 CODE >194:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2778 text8 CODE >399:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2778 text8 CODE >401:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+278A text8 CODE >403:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+279A text8 CODE >404:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+28F6 text7 CODE >204:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+28F6 text7 CODE >206:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2906 text7 CODE >207:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2916 text7 CODE >208:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+29CE text6 CODE >92:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+29CE text6 CODE >95:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+29D2 text6 CODE >96:C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+28D0 text5 CODE >12:C:\Users\Kelly\Documents\Shawn\Rex\stop_watch.c
+28D0 text5 CODE >14:C:\Users\Kelly\Documents\Shawn\Rex\stop_watch.c
+28D4 text5 CODE >16:C:\Users\Kelly\Documents\Shawn\Rex\stop_watch.c
+28E4 text5 CODE >18:C:\Users\Kelly\Documents\Shawn\Rex\stop_watch.c
+28E8 text5 CODE >20:C:\Users\Kelly\Documents\Shawn\Rex\stop_watch.c
+28F4 text5 CODE >24:C:\Users\Kelly\Documents\Shawn\Rex\stop_watch.c
+19DA text4 CODE >89:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+19DA text4 CODE >91:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+19EC text4 CODE >93:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1A10 text4 CODE >95:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1A36 text4 CODE >97:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1A48 text4 CODE >99:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1A90 text4 CODE >100:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1AD8 text4 CODE >102:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1AEC text4 CODE >104:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1AF8 text4 CODE >106:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1AF8 text4 CODE >108:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1B40 text4 CODE >111:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1B4E text4 CODE >113:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1B62 text4 CODE >115:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1B72 text4 CODE >118:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1B74 text4 CODE >119:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1B74 text4 CODE >121:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1B86 text4 CODE >123:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1BD4 text4 CODE >124:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1C1C text4 CODE >125:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1C64 text4 CODE >127:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1C66 text4 CODE >128:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1C7A text4 CODE >130:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1CC8 text4 CODE >131:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1D10 text4 CODE >132:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1D58 text4 CODE >136:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1D5A text3 CODE >355:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1D5A text3 CODE >357:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1D6C text3 CODE >359:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1D90 text3 CODE >361:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1DB6 text3 CODE >363:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1DBA text3 CODE >364:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1DC0 text3 CODE >365:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1DC0 text3 CODE >366:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1DC4 text3 CODE >364:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1DDA text3 CODE >369:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1E00 text3 CODE >373:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1E12 text3 CODE >375:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1E20 text3 CODE >377:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1E40 text3 CODE >379:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1E50 text3 CODE >380:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1E50 text3 CODE >381:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1E98 text3 CODE >383:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1EC0 text3 CODE >384:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1EC2 text3 CODE >385:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1EC2 text3 CODE >388:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1EF8 text3 CODE >390:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1F26 text3 CODE >393:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1F6E text3 CODE >395:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+102E text2 CODE >210:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+102E text2 CODE >212:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1040 text2 CODE >214:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1066 text2 CODE >218:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1066 text2 CODE >223:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+108C text2 CODE >225:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+109E text2 CODE >227:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+10E6 text2 CODE >228:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+112E text2 CODE >229:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+113C text2 CODE >230:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+113E text2 CODE >231:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+113E text2 CODE >233:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1150 text2 CODE >235:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+119E text2 CODE >236:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+119E text2 CODE >237:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+11E6 text2 CODE >238:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+11E6 text2 CODE >239:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+11FA text2 CODE >240:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+120A text2 CODE >242:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+120C text2 CODE >244:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+120C text2 CODE >249:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1232 text2 CODE >251:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1244 text2 CODE >253:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+128C text2 CODE >255:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+12B2 text2 CODE >256:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+12FA text2 CODE >257:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+12FA text2 CODE >258:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1398 text2 CODE >260:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+13A6 text2 CODE >261:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+13A8 text2 CODE >262:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+13A8 text2 CODE >264:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+13CE text2 CODE >266:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+141C text2 CODE >267:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+141C text2 CODE >269:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1464 text2 CODE >270:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1464 text2 CODE >271:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1478 text2 CODE >272:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1488 text2 CODE >274:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+148A text2 CODE >275:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+148A text2 CODE >278:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+14B0 text2 CODE >280:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+14C2 text2 CODE >282:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+150A text2 CODE >283:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1552 text2 CODE >284:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1554 text2 CODE >285:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1554 text2 CODE >287:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+15A2 text2 CODE >288:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+15EA text2 CODE >295:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+15EC text2 CODE >216:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1610 text2 CODE >297:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1612 text2 CODE >216:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+26FC text1 CODE >301:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+26FC text1 CODE >305:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2708 text1 CODE >306:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2714 text1 CODE >307:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+271A text1 CODE >308:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2720 text1 CODE >309:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2730 text1 CODE >310:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2734 text1 CODE >311:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2738 text1 CODE >312:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+273C text1 CODE >314:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+2762 text1 CODE >316:C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+1614 text0 CODE >56:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1614 text0 CODE >59:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1618 text0 CODE >61:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+161C text0 CODE >66:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1620 text0 CODE >78:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1624 text0 CODE >80:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1660 text0 CODE >81:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+169C text0 CODE >82:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+16C8 text0 CODE >84:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+16F4 text0 CODE >85:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1720 text0 CODE >86:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+174C text0 CODE >87:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1778 text0 CODE >89:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+17A4 text0 CODE >92:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+17A4 text0 CODE >94:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+17D4 text0 CODE >96:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+17DC text0 CODE >98:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+17E8 text0 CODE >100:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+17E8 text0 CODE >101:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+17F0 text0 CODE >103:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+17FC text0 CODE >105:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+17FE text0 CODE >106:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+17FE text0 CODE >108:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+180A text0 CODE >109:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1816 text0 CODE >110:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1816 text0 CODE >112:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1846 text0 CODE >114:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+184E text0 CODE >116:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+185A text0 CODE >118:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+185C text0 CODE >119:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+185C text0 CODE >121:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1868 text0 CODE >122:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1868 text0 CODE >124:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1898 text0 CODE >126:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+18A0 text0 CODE >128:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+18E0 text0 CODE >129:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+18EC text0 CODE >130:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+18F8 text0 CODE >134:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+18FA text0 CODE >135:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+18FA text0 CODE >137:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1906 text0 CODE >138:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1912 text0 CODE >139:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1926 text0 CODE >140:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1926 text0 CODE >142:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1956 text0 CODE >144:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+195E text0 CODE >146:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+196A text0 CODE >149:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+196C text0 CODE >150:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+196C text0 CODE >152:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1978 text0 CODE >153:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1978 text0 CODE >156:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1984 text0 CODE >157:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+1990 text0 CODE >158:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+199C text0 CODE >159:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+19A8 text0 CODE >160:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+19B4 text0 CODE >161:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+19C0 text0 CODE >162:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+19CC text0 CODE >163:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+19D8 text0 CODE >92:C:\Users\Kelly\Documents\Shawn\Rex\main.c
+295A cinit CODE >10750:C:\Users\Kelly\AppData\Local\Temp\sjd4.
+295A cinit CODE >10752:C:\Users\Kelly\AppData\Local\Temp\sjd4.
+295A cinit CODE >10755:C:\Users\Kelly\AppData\Local\Temp\sjd4.
+295A cinit CODE >10767:C:\Users\Kelly\AppData\Local\Temp\sjd4.
+295C cinit CODE >10768:C:\Users\Kelly\AppData\Local\Temp\sjd4.
+295E cinit CODE >10769:C:\Users\Kelly\AppData\Local\Temp\sjd4.
+2960 cinit CODE >10770:C:\Users\Kelly\AppData\Local\Temp\sjd4.
+2962 cinit CODE >10778:C:\Users\Kelly\AppData\Local\Temp\sjd4.
+2964 cinit CODE >10779:C:\Users\Kelly\AppData\Local\Temp\sjd4.
+2966 cinit CODE >10780:C:\Users\Kelly\AppData\Local\Temp\sjd4.
+2968 cinit CODE >10781:C:\Users\Kelly\AppData\Local\Temp\sjd4.
+296A cinit CODE >10782:C:\Users\Kelly\AppData\Local\Temp\sjd4.
+296C cinit CODE >10783:C:\Users\Kelly\AppData\Local\Temp\sjd4.
+296E cinit CODE >10789:C:\Users\Kelly\AppData\Local\Temp\sjd4.
+296E cinit CODE >10791:C:\Users\Kelly\AppData\Local\Temp\sjd4.
+2970 cinit CODE >10792:C:\Users\Kelly\AppData\Local\Temp\sjd4.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+StopStrobe@SLED 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__end_of_UpdateStrobeLED 1614 0 CODE 0 text2 dist/default/debug\Rex.debug.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\Rex.debug.obj
+__Hspace_0 30000A 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__Hspace_1 D4 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__Hspace_2 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+newStrobe@IP 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+newStrobe@OP 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+RabbitLightsInit@num 6 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__end_of_GUN_SPACE_TIME_MS 1021 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/debug\Rex.debug.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Kelly\AppData\Local\Temp\sjd4.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\Rex.debug.obj
+__end_of_INTERRUPT_Initialize 29E6 0 CODE 0 text23 dist/default/debug\Rex.debug.obj
+__CFG_RSTOSC$HFINTOSC_64MHZ 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__end_of_TMR0_StopTimer 29D4 0 CODE 0 text6 dist/default/debug\Rex.debug.obj
+__CFG_WDTCCS$SC 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__Lsmallconst 1000 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+_LATA 3FBA 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_LATB 3FBB 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_LATC 3FBC 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_LATD 3FBD 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_LATE 3FBE 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_WPUA 3A41 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_WPUB 3A51 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_WPUC 3A61 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_WPUD 3A71 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_WPUE 3A81 0 ABS 0 - dist/default/debug\Rex.debug.obj
+___sp 0 0 STACK 2 stack C:\Users\Kelly\AppData\Local\Temp\sjd4.obj
+_main 1614 0 CODE 0 text0 dist/default/debug\Rex.debug.obj
+start 1A 0 CODE 0 init C:\Users\Kelly\AppData\Local\Temp\sjd4.obj
+_TMR0_InterruptHandler 2E 0 COMRAM 1 nvCOMRAM dist/default/debug\Rex.debug.obj
+_AC_STROBE_DELAY_MS 1009 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+_STROBE_OFF_TIME_MS 1015 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+__size_of_main 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+?_newStrobe 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\Rex.debug.obj
+__end_of_TMR0_SetInterruptHandler 29C0 0 CODE 0 text20 dist/default/debug\Rex.debug.obj
+__end_of_GunPortInit 2508 0 CODE 0 text26 dist/default/debug\Rex.debug.obj
+__CFG_DEBUG$OFF 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__Hpowerup 0 0 CODE 0 powerup dist/default/debug\Rex.debug.obj
+__LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/debug\Rex.debug.obj
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_UpdateStrobeLED 102E 0 CODE 0 text2 dist/default/debug\Rex.debug.obj
+main@GenStrobe BA 0 BANK0 1 cstackBANK0 dist/default/debug\Rex.debug.obj
+TMR0_SetInterruptHandler@InterruptHandler 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+GunPortInit@IP 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+GunPortInit@OP 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+GunPortInit@TP 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+GunPortInit@gp 14 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__end_of_StopGunFirePattern 25BC 0 CODE 0 text16 dist/default/debug\Rex.debug.obj
+StartGunFirePattern@gp 7 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__accesstop 60 0 ABS 0 - C:\Users\Kelly\AppData\Local\Temp\sjd4.obj
+intlevel0 0 0 CODE 0 text C:\Users\Kelly\AppData\Local\Temp\sjd4.obj
+intlevel1 0 0 CODE 0 text C:\Users\Kelly\AppData\Local\Temp\sjd4.obj
+intlevel2 0 0 CODE 0 text C:\Users\Kelly\AppData\Local\Temp\sjd4.obj
+intlevel3 0 0 CODE 0 text C:\Users\Kelly\AppData\Local\Temp\sjd4.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\Rex.debug.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\Rex.debug.obj
+_TRIGGER1_PIN 102C 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+_TRIGGER2_PIN 102B 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/debug\Rex.debug.obj
+_StopWatch_Initialize 28D0 0 CODE 0 text5 dist/default/debug\Rex.debug.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/debug\Rex.debug.obj
+_StopRabbitLights 2778 0 CODE 0 text8 dist/default/debug\Rex.debug.obj
+__end_of_STROBE1_PIN 102B 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+ivt0x8_base 8 0 CODE 0 ivt0x8 dist/default/debug\Rex.debug.obj
+__end_of_STROBE2_PIN 102A 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+__end_of_GUN_OFF_TIME_MS 1025 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+_ANSELA 3A40 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_ANSELB 3A50 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_ANSELC 3A60 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_ANSELD 3A70 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_ANSELE 3A80 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_TMR0_DefaultInterruptHandler 29E6 0 CODE 0 text30 dist/default/debug\Rex.debug.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\Kelly\AppData\Local\Temp\sjd4.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\Kelly\AppData\Local\Temp\sjd4.obj
+?_RabbitLightsInit 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+_GUN_SPACE_TIME_MS 101D 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+GunPortInit@TIP 7 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+GunPortInit_@IP 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+GunPortInit_@OP 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+GunPortInit_@gp 17 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+_GEN_STROBE_OFF_TIME_MS 100D 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+__end_of_INTERRUPT_InterruptManager 29B2 0 CODE 0 text27 dist/default/debug\Rex.debug.obj
+_StopGunFirePattern 2508 0 CODE 0 text16 dist/default/debug\Rex.debug.obj
+UpdateStrobeLED@SLED 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\Rex.debug.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\Rex.debug.obj
+__end_of_STROBE_ON_TIME_MS 101D 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+main@ACStrobe AD 0 BANK0 1 cstackBANK0 dist/default/debug\Rex.debug.obj
+__CFG_FEXTOSC$OFF 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__end_of_GEN_STROBE_ON_TIME_MS 1015 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+__size_of_StartStrobe 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+StartSyncStrobes@SLED_A 11 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+StartSyncStrobes@SLED_B 13 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__CFG_SAFEN$OFF 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+StopRabbitLights@rp 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+?_GunPortInit 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+_UpdateGunLED 19DA 0 CODE 0 text4 dist/default/debug\Rex.debug.obj
+__HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/debug\Rex.debug.obj
+_INTCON0bits 3FD2 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_GUN_OFF_TIME_MS 1021 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+__size_of_UpdateStrobeLED 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_PIN_MANAGER_Initialize 266C 0 CODE 0 text21 dist/default/debug\Rex.debug.obj
+_GEN_STROBE_ON_TIME_MS 1011 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+__end_of_TRIGGER1_PIN 102D 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+__end_of_TRIGGER2_PIN 102C 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+UpdateRabbitLEDs@i C 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+start_initialization 295A 0 CODE 0 cinit dist/default/debug\Rex.debug.obj
+_ODCONA 3A42 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_ODCONB 3A52 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_ODCONC 3A62 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_ODCOND 3A72 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_ODCONE 3A82 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_OSCFRQ 39DF 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\Rex.debug.obj
+__CFG_WDTCPS$WDTCPS_31 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+UpdateRabbitLEDs@rp 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+_GunPortInit_ 25BC 0 CODE 0 text25 dist/default/debug\Rex.debug.obj
+___rparam_used 1 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__size_of_GunPortInit 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__end_of_SYSTEM_Initialize 29A0 0 CODE 0 text18 dist/default/debug\Rex.debug.obj
+__end_of_StopRabbitLights 27E4 0 CODE 0 text8 dist/default/debug\Rex.debug.obj
+_GetCurrentTime 2974 0 CODE 0 text17 dist/default/debug\Rex.debug.obj
+__pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/debug\Rex.debug.obj
+_T0CON0 3FB8 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_T0CON1 3FB9 0 ABS 0 - dist/default/debug\Rex.debug.obj
+newStrobe@sLED 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__end_of_RABBIT_OFF_TIME_MS 1005 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+_StartStopWatch 29D4 0 CODE 0 text12 dist/default/debug\Rex.debug.obj
+__size_of_StopRabbitLights 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+UpdateGunLED@gp 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__end_of_StopSyncStrobes 2918 0 CODE 0 text7 dist/default/debug\Rex.debug.obj
+__size_of_UpdateGunLED 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/debug\Rex.debug.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/debug\Rex.debug.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/debug\Rex.debug.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/debug\Rex.debug.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/debug\Rex.debug.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/debug\Rex.debug.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/debug\Rex.debug.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/debug\Rex.debug.obj
+__Hbank8 0 0 ABS 0 bank8 dist/default/debug\Rex.debug.obj
+__Hbank9 0 0 ABS 0 bank9 dist/default/debug\Rex.debug.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/debug\Rex.debug.obj
+__Hconst 0 0 CONST 0 const dist/default/debug\Rex.debug.obj
+__Hidata 0 0 CODE 0 idata dist/default/debug\Rex.debug.obj
+__Hidloc 200010 0 IDLOC 0 idloc dist/default/debug\Rex.debug.obj
+_StopStrobe 27E4 0 CODE 0 text11 dist/default/debug\Rex.debug.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/debug\Rex.debug.obj
+__Hparam 0 0 COMRAM 1 rparam dist/default/debug\Rex.debug.obj
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/debug\Rex.debug.obj
+__Hstack 0 0 STACK 2 stack dist/default/debug\Rex.debug.obj
+__Htext0 0 0 ABS 0 text0 dist/default/debug\Rex.debug.obj
+__Htext1 0 0 ABS 0 text1 dist/default/debug\Rex.debug.obj
+__Htext2 0 0 ABS 0 text2 dist/default/debug\Rex.debug.obj
+__Htext3 0 0 ABS 0 text3 dist/default/debug\Rex.debug.obj
+__Htext4 0 0 ABS 0 text4 dist/default/debug\Rex.debug.obj
+__Htext5 0 0 ABS 0 text5 dist/default/debug\Rex.debug.obj
+__Htext6 0 0 ABS 0 text6 dist/default/debug\Rex.debug.obj
+__Htext7 0 0 ABS 0 text7 dist/default/debug\Rex.debug.obj
+__Htext8 0 0 ABS 0 text8 dist/default/debug\Rex.debug.obj
+__Htext9 0 0 ABS 0 text9 dist/default/debug\Rex.debug.obj
+__Hbank10 0 0 ABS 0 bank10 dist/default/debug\Rex.debug.obj
+__Hbank11 0 0 ABS 0 bank11 dist/default/debug\Rex.debug.obj
+__Hbank12 0 0 ABS 0 bank12 dist/default/debug\Rex.debug.obj
+__Hbank13 0 0 ABS 0 bank13 dist/default/debug\Rex.debug.obj
+__Hbank14 0 0 ABS 0 bank14 dist/default/debug\Rex.debug.obj
+__Hbank15 0 0 ABS 0 bank15 dist/default/debug\Rex.debug.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\Rex.debug.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/debug\Rex.debug.obj
+__smallconst 1000 0 SMALLCONST 0 smallconst C:\Users\Kelly\AppData\Local\Temp\sjd4.obj
+_STROBE_ON_TIME_MS 1019 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+__Hcomram 0 0 ABS 0 comram dist/default/debug\Rex.debug.obj
+__Hconfig 30000A 0 CONFIG 0 config dist/default/debug\Rex.debug.obj
+UpdateRabbitLEDs@buffer B 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+UpdateRabbitLEDs@Mask D 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+_StopWatchISR 29C0 0 CODE 0 text29 dist/default/debug\Rex.debug.obj
+__size_of_GunPortInit_ 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/debug\Rex.debug.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/debug\Rex.debug.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/debug\Rex.debug.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/debug\Rex.debug.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/debug\Rex.debug.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/debug\Rex.debug.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/debug\Rex.debug.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/debug\Rex.debug.obj
+__Lbank8 0 0 ABS 0 bank8 dist/default/debug\Rex.debug.obj
+__Lbank9 0 0 ABS 0 bank9 dist/default/debug\Rex.debug.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/debug\Rex.debug.obj
+__Lconst 0 0 CONST 0 const dist/default/debug\Rex.debug.obj
+__Lidata 0 0 CODE 0 idata dist/default/debug\Rex.debug.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/debug\Rex.debug.obj
+__CFG_PR1WAY$ON 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/debug\Rex.debug.obj
+__Lparam 0 0 COMRAM 1 rparam dist/default/debug\Rex.debug.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/debug\Rex.debug.obj
+__Lstack 0 0 STACK 2 stack dist/default/debug\Rex.debug.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/debug\Rex.debug.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/debug\Rex.debug.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/debug\Rex.debug.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/debug\Rex.debug.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/debug\Rex.debug.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/debug\Rex.debug.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/debug\Rex.debug.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/debug\Rex.debug.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/debug\Rex.debug.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/debug\Rex.debug.obj
+StartStrobe@SLED 7 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+StartRabbitLights@i F 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/debug\Rex.debug.obj
+_RABBIT_OFF_TIME_MS 1001 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+__end_of_UpdateGunLED 1D5A 0 CODE 0 text4 dist/default/debug\Rex.debug.obj
+_INTERRUPT_Initialize 29E0 0 CODE 0 text23 dist/default/debug\Rex.debug.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/debug\Rex.debug.obj
+__Hdata 0 0 ABS 0 data dist/default/debug\Rex.debug.obj
+__Hinit 1E 0 CODE 0 init dist/default/debug\Rex.debug.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/debug\Rex.debug.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/debug\Rex.debug.obj
+__Htemp 0 0 COMRAM 1 temp dist/default/debug\Rex.debug.obj
+__Htext 0 0 ABS 0 text dist/default/debug\Rex.debug.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/debug\Rex.debug.obj
+__Ldata 0 0 ABS 0 data dist/default/debug\Rex.debug.obj
+__Linit 1A 0 CODE 0 init dist/default/debug\Rex.debug.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/debug\Rex.debug.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/debug\Rex.debug.obj
+__Ltemp 0 0 COMRAM 1 temp dist/default/debug\Rex.debug.obj
+__Ltext 0 0 ABS 0 text dist/default/debug\Rex.debug.obj
+__CFG_XINST$OFF 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__end_of_GetCurrentTime 298E 0 CODE 0 text17 dist/default/debug\Rex.debug.obj
+__CFG_WDTCWS$WDTCWS_7 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/debug\Rex.debug.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__size_of_TMR0_StopTimer 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/debug\Rex.debug.obj
+__S0 30000A 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__S1 D4 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__S2 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__Hivt0x8 1A 0 CODE 0 ivt0x8 dist/default/debug\Rex.debug.obj
+__size_of_TMR0_ISR 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__end_of_newStrobe 2778 0 CODE 0 text1 dist/default/debug\Rex.debug.obj
+__size_of_TMR0_DefaultInterruptHandler 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__CFG_IVT1WAY$ON 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__end_of_StartStopWatch 29DA 0 CODE 0 text12 dist/default/debug\Rex.debug.obj
+_StartSyncStrobes 2214 0 CODE 0 text9 dist/default/debug\Rex.debug.obj
+IVTBASEH 3FD6 0 ABS 0 - dist/default/debug\Rex.debug.obj
+IVTBASEL 3FD5 0 ABS 0 - dist/default/debug\Rex.debug.obj
+IVTBASEU 3FD7 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__size_of_newStrobe 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__end_of_GunPortInit_ 266C 0 CODE 0 text25 dist/default/debug\Rex.debug.obj
+_StopSyncStrobes 28F6 0 CODE 0 text7 dist/default/debug\Rex.debug.obj
+?_GetCurrentTime 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__pnvCOMRAM 2E 0 COMRAM 1 nvCOMRAM dist/default/debug\Rex.debug.obj
+__size_of_StartGunFirePattern 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__end_of_TMR0_DefaultInterruptHandler 29E8 0 CODE 0 text30 dist/default/debug\Rex.debug.obj
+__end_of_GEN_STROBE_OFF_TIME_MS 1011 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+__pivt0x8 8 0 CODE 0 ivt0x8 dist/default/debug\Rex.debug.obj
+newStrobe@t 6 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+RabbitLightsInit@SLED 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__CFG_BBEN$OFF 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__size_of_StartRabbitLights 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\Rex.debug.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/debug\Rex.debug.obj
+__size_of_StopWatchISR 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_SYSTEM_Initialize 298E 0 CODE 0 text18 dist/default/debug\Rex.debug.obj
+__end_of_StopStrobe 2850 0 CODE 0 text11 dist/default/debug\Rex.debug.obj
+_newStrobe 26FC 0 CODE 0 text1 dist/default/debug\Rex.debug.obj
+?_GunPortInit_ 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+main@Rabbit 60 0 BANK0 1 cstackBANK0 dist/default/debug\Rex.debug.obj
+StopSyncStrobes@SLED_A 7 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+StopSyncStrobes@SLED_B 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__Hramtop 1000 0 RAM 0 ramtop dist/default/debug\Rex.debug.obj
+__Hrparam 0 0 COMRAM 1 rparam dist/default/debug\Rex.debug.obj
+__size_of_StopGunFirePattern 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__activetblptr 3 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/debug\Rex.debug.obj
+__Htext10 0 0 ABS 0 text10 dist/default/debug\Rex.debug.obj
+__Htext11 0 0 ABS 0 text11 dist/default/debug\Rex.debug.obj
+__Htext12 0 0 ABS 0 text12 dist/default/debug\Rex.debug.obj
+__Htext13 0 0 ABS 0 text13 dist/default/debug\Rex.debug.obj
+__Htext14 0 0 ABS 0 text14 dist/default/debug\Rex.debug.obj
+__Htext15 0 0 ABS 0 text15 dist/default/debug\Rex.debug.obj
+__Htext16 0 0 ABS 0 text16 dist/default/debug\Rex.debug.obj
+__Htext17 0 0 ABS 0 text17 dist/default/debug\Rex.debug.obj
+__Htext18 0 0 ABS 0 text18 dist/default/debug\Rex.debug.obj
+__Htext19 0 0 ABS 0 text19 dist/default/debug\Rex.debug.obj
+__Htext20 0 0 ABS 0 text20 dist/default/debug\Rex.debug.obj
+__Htext21 0 0 ABS 0 text21 dist/default/debug\Rex.debug.obj
+__Htext22 0 0 ABS 0 text22 dist/default/debug\Rex.debug.obj
+__Htext23 0 0 ABS 0 text23 dist/default/debug\Rex.debug.obj
+__Htext24 0 0 ABS 0 text24 dist/default/debug\Rex.debug.obj
+__Htext25 0 0 ABS 0 text25 dist/default/debug\Rex.debug.obj
+__Htext26 0 0 ABS 0 text26 dist/default/debug\Rex.debug.obj
+__Htext27 0 0 ABS 0 text27 dist/default/debug\Rex.debug.obj
+__Htext28 0 0 ABS 0 text28 dist/default/debug\Rex.debug.obj
+__Htext29 0 0 ABS 0 text29 dist/default/debug\Rex.debug.obj
+__Htext30 0 0 ABS 0 text30 dist/default/debug\Rex.debug.obj
+__Htext31 0 0 ABS 0 text31 dist/default/debug\Rex.debug.obj
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_INTERRUPT_InterruptManager 29A0 0 CODE 0 text27 dist/default/debug\Rex.debug.obj
+__end_of_RABBIT_ON_TIME_MS 1009 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+_StartStrobe 2340 0 CODE 0 text10 dist/default/debug\Rex.debug.obj
+_PIE3bits 3993 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__end_of_StopWatchISR 29CE 0 CODE 0 text29 dist/default/debug\Rex.debug.obj
+RabbitLightsInit@IP 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+RabbitLightsInit@OP 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+RabbitLightsInit@rp E 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+_TMR0_ISR 2918 0 CODE 0 text28 dist/default/debug\Rex.debug.obj
+__ptext10 2340 0 CODE 0 text10 dist/default/debug\Rex.debug.obj
+__ptext11 27E4 0 CODE 0 text11 dist/default/debug\Rex.debug.obj
+__ptext12 29D4 0 CODE 0 text12 dist/default/debug\Rex.debug.obj
+__ptext13 29DA 0 CODE 0 text13 dist/default/debug\Rex.debug.obj
+__ptext14 20C6 0 CODE 0 text14 dist/default/debug\Rex.debug.obj
+__ptext15 1F70 0 CODE 0 text15 dist/default/debug\Rex.debug.obj
+__ptext16 2508 0 CODE 0 text16 dist/default/debug\Rex.debug.obj
+__ptext17 2974 0 CODE 0 text17 dist/default/debug\Rex.debug.obj
+__ptext18 298E 0 CODE 0 text18 dist/default/debug\Rex.debug.obj
+__ptext19 28A2 0 CODE 0 text19 dist/default/debug\Rex.debug.obj
+__ptext20 29B2 0 CODE 0 text20 dist/default/debug\Rex.debug.obj
+__ptext21 266C 0 CODE 0 text21 dist/default/debug\Rex.debug.obj
+__ptext22 293A 0 CODE 0 text22 dist/default/debug\Rex.debug.obj
+__ptext23 29E0 0 CODE 0 text23 dist/default/debug\Rex.debug.obj
+__ptext24 2850 0 CODE 0 text24 dist/default/debug\Rex.debug.obj
+__ptext25 25BC 0 CODE 0 text25 dist/default/debug\Rex.debug.obj
+__ptext26 244E 0 CODE 0 text26 dist/default/debug\Rex.debug.obj
+__ptext27 29A0 0 CODE 0 text27 dist/default/debug\Rex.debug.obj
+__ptext28 2918 0 CODE 0 text28 dist/default/debug\Rex.debug.obj
+__ptext29 29C0 0 CODE 0 text29 dist/default/debug\Rex.debug.obj
+__ptext30 29E6 0 CODE 0 text30 dist/default/debug\Rex.debug.obj
+__ptext31 0 0 CODE 0 text31 dist/default/debug\Rex.debug.obj
+__end_of_PIN_MANAGER_Initialize 26FC 0 CODE 0 text21 dist/default/debug\Rex.debug.obj
+_StartGunFirePattern 1F70 0 CODE 0 text15 dist/default/debug\Rex.debug.obj
+__end_of_TMR0_Initialize 28D0 0 CODE 0 text19 dist/default/debug\Rex.debug.obj
+__end_of_TMR0_StartTimer 29E0 0 CODE 0 text13 dist/default/debug\Rex.debug.obj
+__Lbank10 0 0 ABS 0 bank10 dist/default/debug\Rex.debug.obj
+__Lbank11 0 0 ABS 0 bank11 dist/default/debug\Rex.debug.obj
+__Lbank12 0 0 ABS 0 bank12 dist/default/debug\Rex.debug.obj
+__Lbank13 0 0 ABS 0 bank13 dist/default/debug\Rex.debug.obj
+__Lbank14 0 0 ABS 0 bank14 dist/default/debug\Rex.debug.obj
+__Lbank15 0 0 ABS 0 bank15 dist/default/debug\Rex.debug.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\Rex.debug.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/debug\Rex.debug.obj
+__Lcomram 0 0 ABS 0 comram dist/default/debug\Rex.debug.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/debug\Rex.debug.obj
+main@GStrobe A0 0 BANK0 1 cstackBANK0 dist/default/debug\Rex.debug.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__CFG_BBSIZE$BBSIZE_512 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__end_of_TMR0_ISR 293A 0 CODE 0 text28 dist/default/debug\Rex.debug.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__CFG_WRTAPP$OFF 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+main@Gun1 6D 0 BANK0 1 cstackBANK0 dist/default/debug\Rex.debug.obj
+main@Gun2 7E 0 BANK0 1 cstackBANK0 dist/default/debug\Rex.debug.obj
+main@Gun3 8F 0 BANK0 1 cstackBANK0 dist/default/debug\Rex.debug.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/debug\Rex.debug.obj
+_TMR0_SetInterruptHandler 29B2 0 CODE 0 text20 dist/default/debug\Rex.debug.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/debug\Rex.debug.obj
+__end_of_StartSyncStrobes 2340 0 CODE 0 text9 dist/default/debug\Rex.debug.obj
+_GunPortInit 244E 0 CODE 0 text26 dist/default/debug\Rex.debug.obj
+stackhi FFF 0 ABS 0 - C:\Users\Kelly\AppData\Local\Temp\sjd4.obj
+stacklo D4 0 ABS 0 - C:\Users\Kelly\AppData\Local\Temp\sjd4.obj
+_OSCCON1 39D9 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_OSCCON3 39DB 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_OSCTUNE 39DE 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/debug\Rex.debug.obj
+__Livt0x8 8 0 CODE 0 ivt0x8 dist/default/debug\Rex.debug.obj
+__size_of_StopSyncStrobes 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__size_of_StopWatch_Initialize 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__size_of_StartSyncStrobes 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__Lspace_0 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__Lspace_1 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__Lspace_2 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__pbssCOMRAM 2A 0 COMRAM 1 bssCOMRAM dist/default/debug\Rex.debug.obj
+__CFG_LPBOREN$OFF 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_RabbitLightsInit 2850 0 CODE 0 text24 dist/default/debug\Rex.debug.obj
+StartSyncStrobes@delay 15 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/debug\Rex.debug.obj
+_PIR3bits 39A3 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__CFG_LVP$ON 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__CFG_CSWEN$ON 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__CFG_ZCD$OFF 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+end_of_initialization 296E 0 CODE 0 cinit dist/default/debug\Rex.debug.obj
+_TMR0_Initialize 28A2 0 CODE 0 text19 dist/default/debug\Rex.debug.obj
+_TMR0_StartTimer 29DA 0 CODE 0 text13 dist/default/debug\Rex.debug.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/debug\Rex.debug.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__end_of_StopWatch_Initialize 28F6 0 CODE 0 text5 dist/default/debug\Rex.debug.obj
+_GUN_ON_TIME_MS 1025 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+__Hreset_vec 6 0 CODE 0 reset_vec dist/default/debug\Rex.debug.obj
+__end_of_StartRabbitLights 2214 0 CODE 0 text14 dist/default/debug\Rex.debug.obj
+__Lramtop 1000 0 RAM 0 ramtop dist/default/debug\Rex.debug.obj
+__Lrparam 0 0 COMRAM 1 rparam dist/default/debug\Rex.debug.obj
+__pcinit 295A 0 CODE 0 cinit dist/default/debug\Rex.debug.obj
+_RABBIT_ON_TIME_MS 1005 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+__ptext0 1614 0 CODE 0 text0 dist/default/debug\Rex.debug.obj
+__ptext1 26FC 0 CODE 0 text1 dist/default/debug\Rex.debug.obj
+__ptext2 102E 0 CODE 0 text2 dist/default/debug\Rex.debug.obj
+__ptext3 1D5A 0 CODE 0 text3 dist/default/debug\Rex.debug.obj
+__ptext4 19DA 0 CODE 0 text4 dist/default/debug\Rex.debug.obj
+__ptext5 28D0 0 CODE 0 text5 dist/default/debug\Rex.debug.obj
+__ptext6 29CE 0 CODE 0 text6 dist/default/debug\Rex.debug.obj
+__ptext7 28F6 0 CODE 0 text7 dist/default/debug\Rex.debug.obj
+__ptext8 2778 0 CODE 0 text8 dist/default/debug\Rex.debug.obj
+__ptext9 2214 0 CODE 0 text9 dist/default/debug\Rex.debug.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/debug\Rex.debug.obj
+_STROBE1_PIN 102A 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+_STROBE2_PIN 1029 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/debug\Rex.debug.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/debug\Rex.debug.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/debug\Rex.debug.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/debug\Rex.debug.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/debug\Rex.debug.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/debug\Rex.debug.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/debug\Rex.debug.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/debug\Rex.debug.obj
+__Ltext18 0 0 ABS 0 text18 dist/default/debug\Rex.debug.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/debug\Rex.debug.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/debug\Rex.debug.obj
+__Ltext21 0 0 ABS 0 text21 dist/default/debug\Rex.debug.obj
+__Ltext22 0 0 ABS 0 text22 dist/default/debug\Rex.debug.obj
+__Ltext23 0 0 ABS 0 text23 dist/default/debug\Rex.debug.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/debug\Rex.debug.obj
+__Ltext25 0 0 ABS 0 text25 dist/default/debug\Rex.debug.obj
+__Ltext26 0 0 ABS 0 text26 dist/default/debug\Rex.debug.obj
+__Ltext27 0 0 ABS 0 text27 dist/default/debug\Rex.debug.obj
+__Ltext28 0 0 ABS 0 text28 dist/default/debug\Rex.debug.obj
+__Ltext29 0 0 ABS 0 text29 dist/default/debug\Rex.debug.obj
+__Ltext30 0 0 ABS 0 text30 dist/default/debug\Rex.debug.obj
+__Ltext31 0 0 ABS 0 text31 dist/default/debug\Rex.debug.obj
+__ramtop 1000 0 RAM 0 ramtop C:\Users\Kelly\AppData\Local\Temp\sjd4.obj
+_UpdateRabbitLEDs 1D5A 0 CODE 0 text3 dist/default/debug\Rex.debug.obj
+__Lpowerup 0 0 CODE 0 powerup dist/default/debug\Rex.debug.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\Rex.debug.obj
+__psmallconst 1000 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+__end_of_StartGunFirePattern 20C6 0 CODE 0 text15 dist/default/debug\Rex.debug.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/debug\Rex.debug.obj
+__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+___param_bank 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+StartRabbitLights@Mask 10 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\Rex.debug.obj
+GunPortInit@GLED 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+GunPortInit@TLED A 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+newStrobe@Strobe 10 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__end_of__initialization 296E 0 CODE 0 cinit dist/default/debug\Rex.debug.obj
+main@EFStrobe C7 0 BANK0 1 cstackBANK0 dist/default/debug\Rex.debug.obj
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/debug\Rex.debug.obj
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__CFG_WRTD$OFF 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__size_of_StopStrobe 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__end_of_GUN_ON_TIME_MS 1029 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/debug\Rex.debug.obj
+__CFG_PWRTS$PWRT_OFF 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__CFG_BORV$VBOR_2P45 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__end_of_RabbitLightsInit 28A2 0 CODE 0 text24 dist/default/debug\Rex.debug.obj
+_T0CON0bits 3FB8 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__size_of_TMR0_SetInterruptHandler 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__CFG_BOREN$SBORDIS 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__size_of_GetCurrentTime 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__end_of_main 19DA 0 CODE 0 text0 dist/default/debug\Rex.debug.obj
+__size_of_RabbitLightsInit 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__CFG_WRTSAF$OFF 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_OSCEN 39DD 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_PORTA 3FCA 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_PORTB 3FCB 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_PORTC 3FCC 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_PORTD 3FCD 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_TMR0H 3FB7 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_TMR0L 3FB6 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_TRISA 3FC2 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_TRISB 3FC3 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_TRISC 3FC4 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_TRISD 3FC5 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_TRISE 3FC6 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__size_of_TMR0_Initialize 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__size_of_TMR0_StartTimer 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__HRAM 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__Hbss 0 0 RAM 1 bss dist/default/debug\Rex.debug.obj
+__Hram 0 0 ABS 0 ram dist/default/debug\Rex.debug.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/debug\Rex.debug.obj
+__LRAM 1 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__Lbss 0 0 RAM 1 bss dist/default/debug\Rex.debug.obj
+__Lram 0 0 ABS 0 ram dist/default/debug\Rex.debug.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/debug\Rex.debug.obj
+__size_of_StartStopWatch 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+StopGunFirePattern@gp 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+_TMR0_StopTimer 29CE 0 CODE 0 text6 dist/default/debug\Rex.debug.obj
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_StartRabbitLights 20C6 0 CODE 0 text14 dist/default/debug\Rex.debug.obj
+__end_of_OSCILLATOR_Initialize 295A 0 CODE 0 text22 dist/default/debug\Rex.debug.obj
+__CFG_PPS1WAY$ON 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+StartRabbitLights@rp 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__initialization 295A 0 CODE 0 cinit dist/default/debug\Rex.debug.obj
+GunPortInit_@GLED 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__CFG_MVECEN$OFF 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+GunPortInit_@TLED 6 0 COMRAM 1 cstackCOMRAM dist/default/debug\Rex.debug.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/debug\Rex.debug.obj
+__end_of_UpdateRabbitLEDs 1F70 0 CODE 0 text3 dist/default/debug\Rex.debug.obj
+__Hsmallconst 102E 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/debug\Rex.debug.obj
+__end_of_AC_STROBE_DELAY_MS 100D 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+__end_of_STROBE_OFF_TIME_MS 1019 0 SMALLCONST 0 smallconst dist/default/debug\Rex.debug.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\Rex.debug.obj
+__CFG_MCLRE$EXTMCLR 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__size_of_INTERRUPT_Initialize 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+__end_of_StartStrobe 244E 0 CODE 0 text10 dist/default/debug\Rex.debug.obj
+__size_of_UpdateRabbitLEDs 0 0 ABS 0 - dist/default/debug\Rex.debug.obj
+_OSCILLATOR_Initialize 293A 0 CODE 0 text22 dist/default/debug\Rex.debug.obj
+_globalTime 2A 0 COMRAM 1 bssCOMRAM dist/default/debug\Rex.debug.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+ivt0x8 0 8 8 16 1
+idloc 0 200000 200000 10 1
+text2 0 102E 102E 19BA 1
+cstackCOMRAM 1 1 1 2F 1
+cstackBANK0 1 60 60 74 1
+reset_vec 0 0 0 6 1
+smallconst 0 1000 1000 2E 1
+config 0 300000 300000 A 1

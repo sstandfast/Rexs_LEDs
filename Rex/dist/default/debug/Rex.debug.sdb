@@ -1,0 +1,549 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F46K42 ]
+[d frameptr 4065 ]
+"84 C:\Users\Kelly\Documents\Shawn\Rex\main.c
+[e E19379 uint8_t `uc
+EF_Strobe 0
+G_Strobe 1
+General 2
+AntiCollision 3
+]
+"157 C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+[e E19379 uint8_t `uc
+EF_Strobe 0
+G_Strobe 1
+General 2
+AntiCollision 3
+]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"51 C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.h
+[s S348 GunPort 17 `*.39VEuc 1 OutputPort 2 0 `*.39VEuc 1 InputPort 2 2 `*.39VEuc 1 TracerPort 2 4 `*.39VEuc 1 TracerInPort 2 6 `uc 1 GunLED 1 8 `uc 1 TracerLED 1 9 `ul 1 GunCnt 4 10 `uc 1 ShotsCnt 1 14 `uc 1 GunRUN 1 15 `uc 1 A_B 1 16 ]
+"12 C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+[v _GunPortInit_ GunPortInit_ `(S348  1 e 17 0 ]
+"51 C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.h
+[s S348 GunPort 17 `*.39VEuc 1 OutputPort 2 0 `*.39VEuc 1 InputPort 2 2 `*.39VEuc 1 TracerPort 2 4 `*.39VEuc 1 TracerInPort 2 6 `uc 1 GunLED 1 8 `uc 1 TracerLED 1 9 `ul 1 GunCnt 4 10 `uc 1 ShotsCnt 1 14 `uc 1 GunRUN 1 15 `uc 1 A_B 1 16 ]
+"41 C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+[v _GunPortInit GunPortInit `(S348  1 e 17 0 ]
+"71
+[v _StartGunFirePattern StartGunFirePattern `(v  1 e 1 0 ]
+"89
+[v _UpdateGunLED UpdateGunLED `(v  1 e 1 0 ]
+"143
+[v _StopGunFirePattern StopGunFirePattern `(v  1 e 1 0 ]
+"156
+[v _StartStrobe StartStrobe `(v  1 e 1 0 ]
+"171
+[v _StartSyncStrobes StartSyncStrobes `(v  1 e 1 0 ]
+"196
+[v _StopStrobe StopStrobe `(v  1 e 1 0 ]
+"204
+[v _StopSyncStrobes StopSyncStrobes `(v  1 e 1 0 ]
+"210
+[v _UpdateStrobeLED UpdateStrobeLED `(v  1 e 1 0 ]
+"37 C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.h
+[s S386 StrobeLED 13 `*.39VEuc 1 OutPort 2 0 `*.39VEuc 1 InPort 2 2 `uc 1 pin 1 4 `E19379 1 S_Type 1 5 `ul 1 StrobeCnt 4 6 `uc 1 StrobeRUN 1 10 `uc 1 PulseCnt 1 11 `uc 1 A_B 1 12 ]
+"301 C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+[v _newStrobe newStrobe `(S386  1 e 13 0 ]
+"72 C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.h
+[s S403 RabbitPort 13 `*.39VEuc 1 OutputPort 2 0 `*.39VEuc 1 InputPort 2 2 `uc 1 StartingLED 1 4 `uc 1 NumLights 1 5 `ul 1 msCnt 4 6 `uc 1 ShiftCNT 1 10 `uc 1 RabbitRUN 1 11 `uc 1 A_B 1 12 ]
+"319 C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+[v _RabbitLightsInit RabbitLightsInit `(S403  1 e 13 0 ]
+"336
+[v _StartRabbitLights StartRabbitLights `(v  1 e 1 0 ]
+"355
+[v _UpdateRabbitLEDs UpdateRabbitLEDs `(v  1 e 1 0 ]
+"399
+[v _StopRabbitLights StopRabbitLights `(v  1 e 1 0 ]
+"56 C:\Users\Kelly\Documents\Shawn\Rex\main.c
+[v _main main `(v  1 e 1 0 ]
+"51 C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"57
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"101 C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"109
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"52 C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"60 C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"86
+[v _TMR0_StartTimer TMR0_StartTimer `(v  1 e 1 0 ]
+"92
+[v _TMR0_StopTimer TMR0_StopTimer `(v  1 e 1 0 ]
+"120
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"133
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+"137
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"12 C:\Users\Kelly\Documents\Shawn\Rex\stop_watch.c
+[v _StopWatch_Initialize StopWatch_Initialize `(v  1 e 1 0 ]
+"26
+[v _StartStopWatch StartStopWatch `(v  1 e 1 0 ]
+"30
+[v _GetCurrentTime GetCurrentTime `(ul  1 e 4 0 ]
+"35
+[v _StopWatchISR StopWatchISR `(v  1 e 1 0 ]
+[s S84 . 1 `uc 1 I2C1TXIE 1 0 :1:0 
+`uc 1 I2C1IE 1 0 :1:1 
+`uc 1 I2C1EIE 1 0 :1:2 
+`uc 1 U1RXIE 1 0 :1:3 
+`uc 1 U1TXIE 1 0 :1:4 
+`uc 1 U1EIE 1 0 :1:5 
+`uc 1 U1IE 1 0 :1:6 
+`uc 1 TMR0IE 1 0 :1:7 
+]
+"3666 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic18f46k42.h
+[s S93 . 1 `uc 1 RXB0IE 1 0 :1:0 
+`uc 1 RXB1IE 1 0 :1:1 
+`uc 1 TXB0IE 1 0 :1:2 
+`uc 1 TXB1IE 1 0 :1:3 
+`uc 1 TXB2IE 1 0 :1:4 
+]
+[s S99 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIE 1 0 :1:4 
+]
+[u S104 . 1 `S84 1 . 1 0 `S93 1 . 1 0 `S99 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES104  1 e 1 @14739 ]
+[s S52 . 1 `uc 1 I2C1TXIF 1 0 :1:0 
+`uc 1 I2C1IF 1 0 :1:1 
+`uc 1 I2C1EIF 1 0 :1:2 
+`uc 1 U1RXIF 1 0 :1:3 
+`uc 1 U1TXIF 1 0 :1:4 
+`uc 1 U1EIF 1 0 :1:5 
+`uc 1 U1IF 1 0 :1:6 
+`uc 1 TMR0IF 1 0 :1:7 
+]
+"4312
+[s S61 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIF 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIF 1 0 :1:4 
+]
+[u S66 . 1 `S52 1 . 1 0 `S61 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES66  1 e 1 @14755 ]
+"5205
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @14809 ]
+"5345
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @14811 ]
+"5497
+[v _OSCEN OSCEN `VEuc  1 e 1 @14813 ]
+"5548
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @14814 ]
+"5652
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @14815 ]
+"8054
+[v _ANSELA ANSELA `VEuc  1 e 1 @14912 ]
+"8116
+[v _WPUA WPUA `VEuc  1 e 1 @14913 ]
+"8178
+[v _ODCONA ODCONA `VEuc  1 e 1 @14914 ]
+"8674
+[v _ANSELB ANSELB `VEuc  1 e 1 @14928 ]
+"8736
+[v _WPUB WPUB `VEuc  1 e 1 @14929 ]
+"8798
+[v _ODCONB ODCONB `VEuc  1 e 1 @14930 ]
+"9510
+[v _ANSELC ANSELC `VEuc  1 e 1 @14944 ]
+"9572
+[v _WPUC WPUC `VEuc  1 e 1 @14945 ]
+"9634
+[v _ODCONC ODCONC `VEuc  1 e 1 @14946 ]
+"10346
+[v _ANSELD ANSELD `VEuc  1 e 1 @14960 ]
+"10408
+[v _WPUD WPUD `VEuc  1 e 1 @14961 ]
+"10470
+[v _ODCOND ODCOND `VEuc  1 e 1 @14962 ]
+"10996
+[v _ANSELE ANSELE `VEuc  1 e 1 @14976 ]
+"11028
+[v _WPUE WPUE `VEuc  1 e 1 @14977 ]
+"11066
+[v _ODCONE ODCONE `VEuc  1 e 1 @14978 ]
+"44768
+[v _TMR0L TMR0L `VEuc  1 e 1 @16310 ]
+"44906
+[v _TMR0H TMR0H `VEuc  1 e 1 @16311 ]
+"45160
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @16312 ]
+[s S140 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 MD16 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"45188
+[s S146 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T0MD16 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+"45188
+[s S152 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 T016BIT 1 0 :1:4 
+]
+"45188
+[u S158 . 1 `S140 1 . 1 0 `S146 1 . 1 0 `S152 1 . 1 0 ]
+"45188
+"45188
+[v _T0CON0bits T0CON0bits `VES158  1 e 1 @16312 ]
+"45258
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @16313 ]
+"45400
+[v _LATA LATA `VEuc  1 e 1 @16314 ]
+"45512
+[v _LATB LATB `VEuc  1 e 1 @16315 ]
+"45624
+[v _LATC LATC `VEuc  1 e 1 @16316 ]
+"45736
+[v _LATD LATD `VEuc  1 e 1 @16317 ]
+"45848
+[v _LATE LATE `VEuc  1 e 1 @16318 ]
+"45900
+[v _TRISA TRISA `VEuc  1 e 1 @16322 ]
+"45962
+[v _TRISB TRISB `VEuc  1 e 1 @16323 ]
+"46024
+[v _TRISC TRISC `VEuc  1 e 1 @16324 ]
+"46086
+[v _TRISD TRISD `VEuc  1 e 1 @16325 ]
+"46148
+[v _TRISE TRISE `VEuc  1 e 1 @16326 ]
+"46180
+[v _PORTA PORTA `VEuc  1 e 1 @16330 ]
+"46264
+[v _PORTB PORTB `VEuc  1 e 1 @16331 ]
+"46335
+[v _PORTC PORTC `VEuc  1 e 1 @16332 ]
+"46421
+[v _PORTD PORTD `VEuc  1 e 1 @16333 ]
+[s S222 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"46629
+[s S230 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 GIEH 1 0 :1:7 
+]
+"46629
+[u S233 . 1 `S222 1 . 1 0 `S230 1 . 1 0 ]
+"46629
+"46629
+[v _INTCON0bits INTCON0bits `VES233  1 e 1 @16338 ]
+"24 C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.h
+[v _GUN_ON_TIME_MS GUN_ON_TIME_MS `Cul  1 e 4 0 ]
+"25
+[v _GUN_OFF_TIME_MS GUN_OFF_TIME_MS `Cul  1 e 4 0 ]
+"26
+[v _GUN_SPACE_TIME_MS GUN_SPACE_TIME_MS `Cul  1 e 4 0 ]
+"27
+[v _STROBE_ON_TIME_MS STROBE_ON_TIME_MS `Cul  1 e 4 0 ]
+"28
+[v _STROBE_OFF_TIME_MS STROBE_OFF_TIME_MS `Cul  1 e 4 0 ]
+"29
+[v _GEN_STROBE_ON_TIME_MS GEN_STROBE_ON_TIME_MS `Cul  1 e 4 0 ]
+"30
+[v _GEN_STROBE_OFF_TIME_MS GEN_STROBE_OFF_TIME_MS `Cul  1 e 4 0 ]
+"31
+[v _AC_STROBE_DELAY_MS AC_STROBE_DELAY_MS `Cul  1 e 4 0 ]
+"32
+[v _RABBIT_ON_TIME_MS RABBIT_ON_TIME_MS `Cul  1 e 4 0 ]
+"33
+[v _RABBIT_OFF_TIME_MS RABBIT_OFF_TIME_MS `Cul  1 e 4 0 ]
+"50 C:\Users\Kelly\Documents\Shawn\Rex\main.c
+[v _TRIGGER1_PIN TRIGGER1_PIN `Cuc  1 e 1 0 ]
+"51
+[v _TRIGGER2_PIN TRIGGER2_PIN `Cuc  1 e 1 0 ]
+"52
+[v _STROBE1_PIN STROBE1_PIN `Cuc  1 e 1 0 ]
+"53
+[v _STROBE2_PIN STROBE2_PIN `Cuc  1 e 1 0 ]
+"58 C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+[v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
+"18 C:\Users\Kelly\Documents\Shawn\Rex\stop_watch.h
+[v _globalTime globalTime `VEul  1 e 4 0 ]
+"56 C:\Users\Kelly\Documents\Shawn\Rex\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+[s S348 GunPort 17 `*.39VEuc 1 OutputPort 2 0 `*.39VEuc 1 InputPort 2 2 `*.39VEuc 1 TracerPort 2 4 `*.39VEuc 1 TracerInPort 2 6 `uc 1 GunLED 1 8 `uc 1 TracerLED 1 9 `ul 1 GunCnt 4 10 `uc 1 ShotsCnt 1 14 `uc 1 GunRUN 1 15 `uc 1 A_B 1 16 ]
+"82
+[v main@Gun3 Gun3 `S348  1 a 17 47 ]
+"81
+[v main@Gun2 Gun2 `S348  1 a 17 30 ]
+"80
+[v main@Gun1 Gun1 `S348  1 a 17 13 ]
+[s S386 StrobeLED 13 `*.39VEuc 1 OutPort 2 0 `*.39VEuc 1 InPort 2 2 `uc 1 pin 1 4 `E19379 1 S_Type 1 5 `ul 1 StrobeCnt 4 6 `uc 1 StrobeRUN 1 10 `uc 1 PulseCnt 1 11 `uc 1 A_B 1 12 ]
+"84
+[v main@EFStrobe EFStrobe `S386  1 a 13 103 ]
+"87
+[v main@GenStrobe GenStrobe `S386  1 a 13 90 ]
+"86
+[v main@ACStrobe ACStrobe `S386  1 a 13 77 ]
+"85
+[v main@GStrobe GStrobe `S386  1 a 13 64 ]
+[s S403 RabbitPort 13 `*.39VEuc 1 OutputPort 2 0 `*.39VEuc 1 InputPort 2 2 `uc 1 StartingLED 1 4 `uc 1 NumLights 1 5 `ul 1 msCnt 4 6 `uc 1 ShiftCNT 1 10 `uc 1 RabbitRUN 1 11 `uc 1 A_B 1 12 ]
+"89
+[v main@Rabbit Rabbit `S403  1 a 13 0 ]
+"166
+} 0
+"37 C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.h
+[s S386 StrobeLED 13 `*.39VEuc 1 OutPort 2 0 `*.39VEuc 1 InPort 2 2 `uc 1 pin 1 4 `E19379 1 S_Type 1 5 `ul 1 StrobeCnt 4 6 `uc 1 StrobeRUN 1 10 `uc 1 PulseCnt 1 11 `uc 1 A_B 1 12 ]
+"301 C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+[v _newStrobe newStrobe `(S386  1 e 13 0 ]
+{
+"304
+[v newStrobe@Strobe Strobe `S386  1 a 13 15 ]
+"301
+[v newStrobe@OP OP `*.39CVEuc  1 p 2 0 ]
+[v newStrobe@IP IP `*.39CVEuc  1 p 2 2 ]
+[v newStrobe@sLED sLED `Cuc  1 p 1 4 ]
+[v newStrobe@t t `CE19379  1 p 1 5 ]
+"317
+} 0
+"210
+[v _UpdateStrobeLED UpdateStrobeLED `(v  1 e 1 0 ]
+{
+[s S386 StrobeLED 13 `*.39VEuc 1 OutPort 2 0 `*.39VEuc 1 InPort 2 2 `uc 1 pin 1 4 `E19379 1 S_Type 1 5 `ul 1 StrobeCnt 4 6 `uc 1 StrobeRUN 1 10 `uc 1 PulseCnt 1 11 `uc 1 A_B 1 12 ]
+[v UpdateStrobeLED@SLED SLED `*.39S386  1 p 2 4 ]
+"299
+} 0
+"355
+[v _UpdateRabbitLEDs UpdateRabbitLEDs `(v  1 e 1 0 ]
+{
+"364
+[v UpdateRabbitLEDs@i i `uc  1 a 1 11 ]
+"363
+[v UpdateRabbitLEDs@Mask Mask `uc  1 a 1 12 ]
+"371
+[v UpdateRabbitLEDs@buffer buffer `uc  1 a 1 10 ]
+[s S403 RabbitPort 13 `*.39VEuc 1 OutputPort 2 0 `*.39VEuc 1 InputPort 2 2 `uc 1 StartingLED 1 4 `uc 1 NumLights 1 5 `ul 1 msCnt 4 6 `uc 1 ShiftCNT 1 10 `uc 1 RabbitRUN 1 11 `uc 1 A_B 1 12 ]
+"355
+[v UpdateRabbitLEDs@rp rp `*.39S403  1 p 2 4 ]
+"397
+} 0
+"89
+[v _UpdateGunLED UpdateGunLED `(v  1 e 1 0 ]
+{
+[s S348 GunPort 17 `*.39VEuc 1 OutputPort 2 0 `*.39VEuc 1 InputPort 2 2 `*.39VEuc 1 TracerPort 2 4 `*.39VEuc 1 TracerInPort 2 6 `uc 1 GunLED 1 8 `uc 1 TracerLED 1 9 `ul 1 GunCnt 4 10 `uc 1 ShotsCnt 1 14 `uc 1 GunRUN 1 15 `uc 1 A_B 1 16 ]
+[v UpdateGunLED@gp gp `*.39S348  1 p 2 4 ]
+"138
+} 0
+"12 C:\Users\Kelly\Documents\Shawn\Rex\stop_watch.c
+[v _StopWatch_Initialize StopWatch_Initialize `(v  1 e 1 0 ]
+{
+"24
+} 0
+"92 C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+[v _TMR0_StopTimer TMR0_StopTimer `(v  1 e 1 0 ]
+{
+"96
+} 0
+"204 C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+[v _StopSyncStrobes StopSyncStrobes `(v  1 e 1 0 ]
+{
+[s S386 StrobeLED 13 `*.39VEuc 1 OutPort 2 0 `*.39VEuc 1 InPort 2 2 `uc 1 pin 1 4 `E19379 1 S_Type 1 5 `ul 1 StrobeCnt 4 6 `uc 1 StrobeRUN 1 10 `uc 1 PulseCnt 1 11 `uc 1 A_B 1 12 ]
+[v StopSyncStrobes@SLED_A SLED_A `*.39S386  1 p 2 6 ]
+[v StopSyncStrobes@SLED_B SLED_B `*.39S386  1 p 2 8 ]
+"208
+} 0
+"399
+[v _StopRabbitLights StopRabbitLights `(v  1 e 1 0 ]
+{
+[s S403 RabbitPort 13 `*.39VEuc 1 OutputPort 2 0 `*.39VEuc 1 InputPort 2 2 `uc 1 StartingLED 1 4 `uc 1 NumLights 1 5 `ul 1 msCnt 4 6 `uc 1 ShiftCNT 1 10 `uc 1 RabbitRUN 1 11 `uc 1 A_B 1 12 ]
+[v StopRabbitLights@rp rp `*.39S403  1 p 2 0 ]
+"406
+} 0
+"171
+[v _StartSyncStrobes StartSyncStrobes `(v  1 e 1 0 ]
+{
+[s S386 StrobeLED 13 `*.39VEuc 1 OutPort 2 0 `*.39VEuc 1 InPort 2 2 `uc 1 pin 1 4 `E19379 1 S_Type 1 5 `ul 1 StrobeCnt 4 6 `uc 1 StrobeRUN 1 10 `uc 1 PulseCnt 1 11 `uc 1 A_B 1 12 ]
+[v StartSyncStrobes@SLED_A SLED_A `*.39S386  1 p 2 16 ]
+[v StartSyncStrobes@SLED_B SLED_B `*.39S386  1 p 2 18 ]
+[v StartSyncStrobes@delay delay `ul  1 p 4 20 ]
+"194
+} 0
+"156
+[v _StartStrobe StartStrobe `(v  1 e 1 0 ]
+{
+[s S386 StrobeLED 13 `*.39VEuc 1 OutPort 2 0 `*.39VEuc 1 InPort 2 2 `uc 1 pin 1 4 `E19379 1 S_Type 1 5 `ul 1 StrobeCnt 4 6 `uc 1 StrobeRUN 1 10 `uc 1 PulseCnt 1 11 `uc 1 A_B 1 12 ]
+[v StartStrobe@SLED SLED `*.39S386  1 p 2 6 ]
+"166
+} 0
+"196
+[v _StopStrobe StopStrobe `(v  1 e 1 0 ]
+{
+[s S386 StrobeLED 13 `*.39VEuc 1 OutPort 2 0 `*.39VEuc 1 InPort 2 2 `uc 1 pin 1 4 `E19379 1 S_Type 1 5 `ul 1 StrobeCnt 4 6 `uc 1 StrobeRUN 1 10 `uc 1 PulseCnt 1 11 `uc 1 A_B 1 12 ]
+[v StopStrobe@SLED SLED `*.39S386  1 p 2 0 ]
+"203
+} 0
+"26 C:\Users\Kelly\Documents\Shawn\Rex\stop_watch.c
+[v _StartStopWatch StartStopWatch `(v  1 e 1 0 ]
+{
+"29
+} 0
+"86 C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+[v _TMR0_StartTimer TMR0_StartTimer `(v  1 e 1 0 ]
+{
+"90
+} 0
+"336 C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+[v _StartRabbitLights StartRabbitLights `(v  1 e 1 0 ]
+{
+"344
+[v StartRabbitLights@i i `uc  1 a 1 14 ]
+"342
+[v StartRabbitLights@Mask Mask `uc  1 a 1 15 ]
+[s S403 RabbitPort 13 `*.39VEuc 1 OutputPort 2 0 `*.39VEuc 1 InputPort 2 2 `uc 1 StartingLED 1 4 `uc 1 NumLights 1 5 `ul 1 msCnt 4 6 `uc 1 ShiftCNT 1 10 `uc 1 RabbitRUN 1 11 `uc 1 A_B 1 12 ]
+"336
+[v StartRabbitLights@rp rp `*.39S403  1 p 2 4 ]
+"353
+} 0
+"71
+[v _StartGunFirePattern StartGunFirePattern `(v  1 e 1 0 ]
+{
+[s S348 GunPort 17 `*.39VEuc 1 OutputPort 2 0 `*.39VEuc 1 InputPort 2 2 `*.39VEuc 1 TracerPort 2 4 `*.39VEuc 1 TracerInPort 2 6 `uc 1 GunLED 1 8 `uc 1 TracerLED 1 9 `ul 1 GunCnt 4 10 `uc 1 ShotsCnt 1 14 `uc 1 GunRUN 1 15 `uc 1 A_B 1 16 ]
+[v StartGunFirePattern@gp gp `*.39S348  1 p 2 6 ]
+"84
+} 0
+"143
+[v _StopGunFirePattern StopGunFirePattern `(v  1 e 1 0 ]
+{
+[s S348 GunPort 17 `*.39VEuc 1 OutputPort 2 0 `*.39VEuc 1 InputPort 2 2 `*.39VEuc 1 TracerPort 2 4 `*.39VEuc 1 TracerInPort 2 6 `uc 1 GunLED 1 8 `uc 1 TracerLED 1 9 `ul 1 GunCnt 4 10 `uc 1 ShotsCnt 1 14 `uc 1 GunRUN 1 15 `uc 1 A_B 1 16 ]
+[v StopGunFirePattern@gp gp `*.39S348  1 p 2 0 ]
+"151
+} 0
+"30 C:\Users\Kelly\Documents\Shawn\Rex\stop_watch.c
+[v _GetCurrentTime GetCurrentTime `(ul  1 e 4 0 ]
+{
+"33
+} 0
+"101 C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"107
+} 0
+"60 C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"84
+} 0
+"133
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"135
+} 0
+"52 C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"103
+} 0
+"109 C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"121
+} 0
+"51 C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"55
+} 0
+"72 C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.h
+[s S403 RabbitPort 13 `*.39VEuc 1 OutputPort 2 0 `*.39VEuc 1 InputPort 2 2 `uc 1 StartingLED 1 4 `uc 1 NumLights 1 5 `ul 1 msCnt 4 6 `uc 1 ShiftCNT 1 10 `uc 1 RabbitRUN 1 11 `uc 1 A_B 1 12 ]
+"319 C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+[v _RabbitLightsInit RabbitLightsInit `(S403  1 e 13 0 ]
+{
+"321
+[v RabbitLightsInit@rp rp `S403  1 a 13 13 ]
+"319
+[v RabbitLightsInit@OP OP `*.39CVEuc  1 p 2 0 ]
+[v RabbitLightsInit@IP IP `*.39CVEuc  1 p 2 2 ]
+[v RabbitLightsInit@SLED SLED `Cuc  1 p 1 4 ]
+[v RabbitLightsInit@num num `Cuc  1 p 1 5 ]
+"334
+} 0
+"51 C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.h
+[s S348 GunPort 17 `*.39VEuc 1 OutputPort 2 0 `*.39VEuc 1 InputPort 2 2 `*.39VEuc 1 TracerPort 2 4 `*.39VEuc 1 TracerInPort 2 6 `uc 1 GunLED 1 8 `uc 1 TracerLED 1 9 `ul 1 GunCnt 4 10 `uc 1 ShotsCnt 1 14 `uc 1 GunRUN 1 15 `uc 1 A_B 1 16 ]
+"12 C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+[v _GunPortInit_ GunPortInit_ `(S348  1 e 17 0 ]
+{
+"14
+[v GunPortInit_@gp gp `S348  1 a 17 22 ]
+"12
+[v GunPortInit_@OP OP `*.39CVEuc  1 p 2 0 ]
+[v GunPortInit_@IP IP `*.39CVEuc  1 p 2 2 ]
+[v GunPortInit_@GLED GLED `Cuc  1 p 1 4 ]
+[v GunPortInit_@TLED TLED `Cuc  1 p 1 5 ]
+"34
+} 0
+"51 C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.h
+[s S348 GunPort 17 `*.39VEuc 1 OutputPort 2 0 `*.39VEuc 1 InputPort 2 2 `*.39VEuc 1 TracerPort 2 4 `*.39VEuc 1 TracerInPort 2 6 `uc 1 GunLED 1 8 `uc 1 TracerLED 1 9 `ul 1 GunCnt 4 10 `uc 1 ShotsCnt 1 14 `uc 1 GunRUN 1 15 `uc 1 A_B 1 16 ]
+"41 C:\Users\Kelly\Documents\Shawn\Rex\LED_Patterns.c
+[v _GunPortInit GunPortInit `(S348  1 e 17 0 ]
+{
+"43
+[v GunPortInit@gp gp `S348  1 a 17 19 ]
+"41
+[v GunPortInit@OP OP `*.39CVEuc  1 p 2 0 ]
+[v GunPortInit@IP IP `*.39CVEuc  1 p 2 2 ]
+[v GunPortInit@TP TP `*.39CVEuc  1 p 2 4 ]
+[v GunPortInit@TIP TIP `*.39CVEuc  1 p 2 6 ]
+[v GunPortInit@GLED GLED `Cuc  1 p 1 8 ]
+[v GunPortInit@TLED TLED `Cuc  1 p 1 9 ]
+"64
+} 0
+"57 C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"68
+} 0
+"120 C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"130
+} 0
+"35 C:\Users\Kelly\Documents\Shawn\Rex\stop_watch.c
+[v _StopWatchISR StopWatchISR `(v  1 e 1 0 ]
+{
+"38
+} 0
+"137 C:\Users\Kelly\Documents\Shawn\Rex\mcc_generated_files/tmr0.c
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"140
+} 0
